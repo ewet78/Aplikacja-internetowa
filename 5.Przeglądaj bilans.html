@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Menu główne</title>
+	<meta name="description" content="Menu główne w aplikacji do prowadzenia budżetu osobistego " />
+	<meta name="keywords" content="menu, budżet osobisty, użytkownik" />
+	<meta http-equiv="X_UA_Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<header>
+		<h1>Przeglądaj bilans</h1>
+	</header>
+	<main>
+		<div id="container3">
+			<form action="bilans.php" method="post">
+				<div id="bilans">
+							<label for="zakresDat">Zakres dat</label>
+							<select id="zakresDat" name="zakresDat">
+								<option selected>Bieżący miesiąc</option>
+								<option>Poprzedni miesiąc</option>
+								<option>Bieżący rok</option>
+								<option>Niestandardowy</option>
+							</select>
+				</div>
+				
+				<div id="submit">
+						<input type="submit" value="Wyświetl bilans">
+				</div>
+			</form>
+		</div>
+	</main>
+
+</body>
+
+</html>
